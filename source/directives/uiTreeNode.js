@@ -407,6 +407,9 @@
             };
 
             dragEnd = function (e) {
+              if(!dragInfo) {
+                return;
+              }
               var dragEventArgs = dragInfo.eventArgs(elements, pos);
               e.preventDefault();
               unbindDragMoveEvents();
