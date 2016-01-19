@@ -407,7 +407,7 @@
             };
 
             dragEnd = function (e) {
-              if(!dragInfo) {
+              if (!dragInfo) {
                 return;
               }
               var dragEventArgs = dragInfo.eventArgs(elements, pos);
